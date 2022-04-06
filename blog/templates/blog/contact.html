@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="col-sm-10">
+  <h3 class="text-white mt-5">Contact Page</h3>
+ <form>
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <br><br>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <br><br>
+      <label for="lname">Email Address</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your Email id..">
+
+      <br><br>
+      
+  
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="usa">INDIA</option>
+      </select>
+
+      <br><br>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+      <br><br>
+  
+      
+  
+    </form>
+  </div>
+  <a href="{% url 'success'  %}" class="btn btn-warning btn-sm">Send</a>
+ </form>
+ <br><br>
+ <a href="https://www.linkedin.com/in/nitesh02upadhyay//" class="btn btn-success btn-sm">LINKEDIN</a>
+ <a href="https://www.facebook.com/nitesh.upadhyay.3914/" class="btn btn-light btn-sm">FACEBOOK</a>
+ <a href="https://github.com/upadhyay02nitesh//" class="btn btn-primary btn-sm">GITHUB</a>
+ <a  class="btn btn-danger btn-sm">Mail id-niteshupa6@gmail.com</a>
+
+</div>
+
+{% endblock content %}
