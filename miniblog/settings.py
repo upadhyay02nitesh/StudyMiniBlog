@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_horeku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,13 +83,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'dbth55p97lf9it',
+        'NAME': 'd933lvba87dp4t',
 
-        'USER': 'bednidqruqweql',
+        'USER': 'fuqbgtdbhfieqd',
 
-        'PASSWORD': 'd4dd2eb2bc7e02f5c939cf03d656af315b60655c9fba3000d22f1d73d9c6aef9',
+        'PASSWORD': '951e69b2a7bf236b9fdd8397219b3eb01b8ef78b63a387179a540f1a42298877',
 
-        'HOST': 'ec2-52-73-155-171.compute-1.amazonaws.com',
+        'HOST': 'ec2-3-217-251-77.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
