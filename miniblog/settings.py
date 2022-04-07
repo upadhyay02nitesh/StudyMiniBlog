@@ -53,7 +53,7 @@ MIDDLEWARE = [
     # 'blog.middlewares.UnderConstructionMiddleware'
 ]
 
-ROOT_URLCONF = 'miniblog.miniblog.urls'
+ROOT_URLCONF = 'miniblog.urls'
 
 TEMPLATES = [
     {
