@@ -52,7 +52,7 @@ MIDDLEWARE = [
     # 'blog.middlewares.UnderConstructionMiddleware'
 ]
 
-ROOT_URLCONF = 'miniblog.urls'
+ROOT_URLCONF = 'miniblog.miniblog.urls'
 
 TEMPLATES = [
     {
@@ -77,10 +77,23 @@ WSGI_APPLICATION = 'miniblog.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'dbth55p97lf9it',
+
+        'USER': 'bednidqruqweql',
+
+        'PASSWORD': 'd4dd2eb2bc7e02f5c939cf03d656af315b60655c9fba3000d22f1d73d9c6aef9',
+
+        'HOST': 'ec2-52-73-155-171.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 
