@@ -32,4 +32,7 @@ urlpatterns = [
     path('updatepost/<int:id>/', views.update_post, name='updatepost'),
     path('delete/<int:id>/', views.delete_post, name='deletepost'),
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

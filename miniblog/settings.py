@@ -25,7 +25,7 @@ SECRET_KEY = '0via%8im1cojaql4b&4&hzos1k4!11y2f3p4+dqg%was(jzyga'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["studyminiblogpublisher.jherokuapp.com","localhost"]
+ALLOWED_HOSTS = ["*"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
@@ -129,3 +129,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #         'LOCATION': 'blog_cache',
 #     }
 # }
+STATIC_ROOT =os.join(BASE_DIR,"staticfiles")
