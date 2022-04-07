@@ -129,4 +129,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #         'LOCATION': 'blog_cache',
 #     }
 # }
-STATIC_ROOT =os.join(BASE_DIR,"staticfiles")
+STATIC_ROOT =os.path.join(BASE_DIR,"staticfiles")
