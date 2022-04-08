@@ -26,7 +26,9 @@ SECRET_KEY = '0via%8im1cojaql4b&4&hzos1k4!11y2f3p4+dqg%was(jzyga'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    '127.0.0.1'
+    'miniblog.herokuapp.com']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,13 +86,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'd933lvba87dp4t',
+        'NAME': 'dbdc88h0hss3tr',
 
-        'USER': 'fuqbgtdbhfieqd',
+        'USER': 'pmwfthekipkjco',
 
-        'PASSWORD': '951e69b2a7bf236b9fdd8397219b3eb01b8ef78b63a387179a540f1a42298877',
+        'PASSWORD': 'd24e929a8a63c32c2243f4c4abee58de922f4552689a4a1566ba061cd07a00c2',
 
-        'HOST': 'ec2-3-217-251-77.compute-1.amazonaws.com',
+        'HOST': 'ec2-18-214-134-226.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
