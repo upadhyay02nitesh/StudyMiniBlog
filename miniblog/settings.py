@@ -146,7 +146,7 @@ STATIC_ROOT =os.path.join(BASE_DIR,"staticfiles")
 
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
         'LOCATION': 'blog_cache',
     }
 }
