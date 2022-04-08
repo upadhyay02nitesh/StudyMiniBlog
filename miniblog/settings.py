@@ -142,10 +142,10 @@ STATIC_URL = '/static/'
 django_heroku.settings(locals())
 MEDIA_URL='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-#         'LOCATION': 'blog_cache',
-#     }
-# }
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'blog_cache',
+    }
+}
 STATIC_ROOT =os.path.join(BASE_DIR,"staticfiles")
